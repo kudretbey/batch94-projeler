@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sayilar = [12, 56, 14, 67, 89, 33, 22];
+      let toplam = 0;
+      let  ortalama = 0;
+      let sayac = 0;
+      for(let i=0; i<sayilar.length; i++){
+                toplam =  toplam + sayilar[i] // Burda sayıları topladık
+            
+                 }
+            ortalama = toplam / sayilar.length;// Sayıların ortalamasını aldık
+            console.log(toplam);
+            console.log(ortalama);
+            
+            let kucuksayilar=[]; // ortalamanın altında kalan sayıları tutacağımız bir dizi oluşturduk.
+            for(let i=0; i<sayilar.length; i++){
+                 if(sayilar[i]<ortalama){
+                  sayac ++;  // Burda ortalamanın altında kalanları saydık
+                   kucuksayilar.push(sayilar[i]); // Burada push metodu ile ortalamanın altında kalan sayıları
+                                                  // kucuksayilar dizisine attık
+                 }  
+                 
+            }
+            console.log(sayac);
+            console.log(`Ortalamamız ${ortalama} dır. Ortalamadan küçük sayılar ${kucuksayilar} olmak üzere ${sayac} tanedir.`);
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+
+<table>
+    <tr>
+        <td>
+            <label for="eposta">Eposta</label>
+        </td>
+        <td>
+            <input type="email" name="eposta" id="eposta">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="sifre">Sifre</label>
+        </td>
+        <td>
+            <input type="password" name="sifre" id="sifre">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="kod">Guvenlik kodu</label>
+        </td>
+        <td>
+            <input type="text" name="kod" id="kod" value="abc" readonly>
+            <!-- 1 ust satirda value ile ekrana " " icinde yazilan degerleri atadık ve readonly ile de sadece okunabilir yaptık.-->
+        </td>
+    </tr>
+    <tr>
+        <td></td> <!-- bos biraktim -->
+        <td>
+            <input type="submit" value="Kaydet" disabled> 
+            <input type="reset" value="Temizle">
+<!-- 1 ust satirda disable ile yazilan metin ile kaydeti disable yaptık.-->
+
+        </td>
+    </tr>
+</table>
+
+
+    </form>
+</body>
+</html>
